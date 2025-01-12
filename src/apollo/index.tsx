@@ -7,7 +7,7 @@ export const client = new ApolloClient({
   cache: new InMemoryCache({
     typePolicies
   }),
-  uri: 'http://192.168.100.2:4444/graphql',
+  uri: 'http://192.168.100.2:4444/v1',
 })
 
 export const ApolloProvider = memo(({ children }: PropsWithChildren): React.JSX.Element => {
@@ -16,4 +16,4 @@ export const ApolloProvider = memo(({ children }: PropsWithChildren): React.JSX.
       {children}
     </Provider>
   )
-})
+}) 
